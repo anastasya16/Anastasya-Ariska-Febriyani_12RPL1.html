@@ -1,0 +1,93 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Tugas 3 PBO</title>
+  <style>
+    body {
+      font-family: Arial, sans-serif;
+      background: #ffeaf3;
+      margin: 0;
+      padding: 0;
+      text-align: center;
+      color: #333;
+    }
+
+    h1 {
+      margin: 30px 0;
+      color: #e91e63;
+    }
+
+    button {
+      display: block;
+      width: 200px;
+      margin: 10px auto;
+      padding: 10px;
+      background: #f06292;
+      color: white;
+      border: none;
+      border-radius: 8px;
+      font-size: 15px;
+      cursor: pointer;
+    }
+
+    button:hover {
+      background: #e91e63;
+    }
+
+    #Biodata {
+      margin-top: 20px;
+      padding: 10px;
+      max-width: 400px;
+      margin-left: auto;
+      margin-right: auto;
+      background: white;
+      border-radius: 8px;
+      box-shadow: 0 2px 6px rgba(0,0,0,0.1);
+    }
+    
+    #Rumah {
+      margin-top: 20px;
+      padding: 10px;
+      max-width: 400px;
+      margin-left: auto;
+      margin-right: auto;
+      background: white;
+      border-radius: 8px;
+      box-shadow: 0 2px 6px rgba(0,0,0,0.1);
+    }
+
+    
+    #Sekolah {
+      margin-top: 20px;
+      padding: 10px;
+      max-width: 400px;
+      margin-left: auto;
+      margin-right: auto;
+      background: white;
+      border-radius: 8px;
+      box-shadow: 0 2px 6px rgba(0,0,0,0.1);
+    }
+
+  </style>
+</head>
+<body>
+  <h1> Informasi Pribadi Saya</h1>
+<div>
+  <button onclick="Biodata()">Biodata</button>
+  <button onclick="Rumah()">Rumah</button>
+  <button onclick="Sekolah()">Sekolah</button>
+</div>
+
+    <!-- Tempat menampilkan hasil -->
+  <div id="Biodata" class="Biodata"></div>
+  <div id="Rumah" class="Rumah"></div>
+  <div id="Sekolah" class="Sekolah"></div>
+
+  <!-- Import file JS -->
+  <script src="Biodata.js"></script>
+  <script src="Rumah.js"></script>
+  <script src="Sekolah.js"></script>
+</body>
+</html>
